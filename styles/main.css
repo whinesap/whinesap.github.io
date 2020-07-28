@@ -2,6 +2,12 @@ body {
     padding-bottom: 5rem;
 }
 
+.banner {
+    width: 100%;
+    background-color: whitesmoke;
+
+}
+
 header {
     background: url(../images/hero.jpg) center / cover;
     height: 60vh;
