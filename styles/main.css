@@ -3,9 +3,16 @@ body {
 }
 
 .banner {
-    width: 100%;
+    width: 80%;
     background-color: whitesmoke;
 
+
+}
+
+.banner h1, p{
+    color: black;
+
+    text-align: center;
 }
 
 header {
