@@ -1,7 +1,7 @@
 
 
 * {
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 html {
@@ -10,40 +10,212 @@ html {
 
 body {
     background-color: #FFF9F9;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr
+    grid-template-areas:
+    ". nav ."
+    ". hero ."
+    ". projects .";
     margin: 0 auto;
+    max-width: 100%;
     padding-bottom: 5rem;
 }
 
-.container {
-    margin: 0 auto;
-    width: 80%;
-} 
 
-.banner {
-    background-color: whitesmoke;
 
+nav {
+    align-items: center;
+    display: flex;
+
+    justify-content: space-between;
+    margin: 0 2rem;
+    padding: 5% 5%;
+    text-align: left;
 
 }
 
-.banner h1, p{
-    color: black;
+button {
+  background-color: #E35846;
+  border: none;
+  color: white;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: inconsolata;
 
-    text-align: center;
+img.logo{
+  width: 4.5rem;
 }
+
+nav ul {
+
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+}
+
+.hero {
+    padding: 20rem, 2rem;
+}
+
+.projects {
+    margin: 0 10rem;
+    padding: 20rem, 2rem;
+}
+
 
 header {
     background: white;
-    height: 60vh;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #E35846;
     justify-content: center;
+    margin: 5rem 10rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
     text-align: center;
 }
 
+.designer-brief {
+  background: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #E35846;
+  justify-content: center;
+  margin: 5rem 10rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.figure {
+  background: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #E35846;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+/* Typography */
+
 h1 {
-    font-weight: bold;
     color: #1c1c1c;
+    font-family: lexend zetta;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.05px;
+    line-height: 150%;
+    margin: 0 auto;
+    padding: 4rem;
+    width: 53rem;
+}
+
+h2 {
+    color: #1c1c1c;
+    font-family: inconsolata;
+    font-size: 2rem;
+    padding: 4rem 0 2rem 0;
+}
+
+h3 {
+  color: #1C1C1C;
+  font-family: inconsolata;
+  font-size: 1.6rem;
+  padding-bottom: 4rem;
+}
+
+p {
+  color: #1c1c1c;
+  font-family: inconsolata;
+  font-size: 1.6rem;
+  line-height: 130%;
+  padding: 2rem 0;
+  width: 60%;
 }
 
 
+a {
+  color: #1c1c1c;
+  font-family: inconsolata;
+  font-size: 2rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E35846;
+}
+
+
+/* End Typography */
+
+
+
+article {
+  text-align: center;
+  align-content: center;
+  padding: 2rem 0;
+}
+
+article img {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #1c1c1c;
+  width: 80%;
+}
+
+.proj {
+  background-color: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #E35846;
+  margin: 2rem 0;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+  text-align: center;
+  width: 80%;
+}
+
+/* Case Study Specific */
+
+header img{
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  width: 70%;
+}
+
+/* Footer */
+
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10% 5%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+footer li {
+  padding: 0 1.5rem;
+}
 
     @media screen and (max-width: 1024px) {
     header.mdl-layout__header {
@@ -51,4 +223,4 @@ h1 {
     }
 
 
-}    
+}

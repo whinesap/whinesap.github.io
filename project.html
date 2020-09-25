@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio | Madison Bytes</title>
-
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">
         <!-- Custom Styles -->
         <link rel="stylesheet" href="styles/main.css">
-        
+
+
     </head>
     <body>
         <!-- navigation bar -->
         <nav>
-        <a href="index.html">   
+        <a href="index.html">
         <img src="images/logo.jpg" alt="personal logo" class="logo">
         </a>
     <ul>
@@ -19,14 +20,27 @@
         <li> <a href="contact.html">Contact</a></li>
         <li> <a href="about.html">About</a></li>
     </ul></nav>
+
+
         <!-- hero section  -->
         <header>
             <h1>Potted: A Hub For Houseplants</h1>
+            <img src="images/Homepage(2).png" alt="mockup screen">
+            <!-- prototype link -->
+                <button id="potted-prototype">View Prototype</button>
+                <script type="text/javascript">
+    document.getElementById("potted-prototype").onclick = function () {
+        location.href = "https://www.figma.com/proto/8bdDkrnbW5bKvsbh25zX88/Potted-Mobile?scaling=scale-down&node-id=30%3A0";
+                };
+                </script>
         </header>
         <main>
-            <img src="images/up.png" alt="mockup screen">
-        <!-- prototype link -->
-            <button type="button">View Prototype</button>
+
+
+
+
+
+
         <!-- project brief -->
            <article>
                <h2>Summary:</h2>
@@ -49,6 +63,9 @@
                <h2>Solution:</h2>
                <p> Potted seeks to make optimal plant care fun and accessible via a functional and minimalistic design. The user has the ability to add plants to their collection, view basic care tips, log tasks, and receive reminders. Users can additionally add friends, compile a plant wishlist, view friends' wishlists, and discover new plant varieties.</p>
            </article>
+
+
+
            <!-- project process -->
            <article>
                <h2>User Research</h2>
@@ -72,7 +89,7 @@
                    <p>My last step in this phase of the project was to perform a competitive analysis on current prominent plant apps. I wanted to find out what features these apps had chosen to offer, as well as their strengths and weaknesses.</p>
                    <div class="figure">
                        <img src="images/Group68(3).png" alt="app icons">
-        
+
                    </div>
                    <p>Planta was the most popular app, with an extremely in-depth onboarding process and complex paramters that influence care recommendations The visual design is a bit weak, and there is no opportunity to add friends.</p>
                    <p>Vera is another plant app with much better visual design based on a robust design system, and very pared-down features relative to Planta, with users setting schedules themselves with no recommendations given from the app. There is still no community aspect available.</p>
@@ -95,7 +112,7 @@
                    <div class="figure">
                     <img src="images/userflows2.png" alt="user flows">
                     <img src="images/userflows1.png" alt="user flows">
-     
+
                 </div>
                    <p>I was able to create a prototype with my wireframes through Invision, and then conduct an initial round of usability testing. Participants were asked to complete a series of tasks which included signing up for an account, as well as searching for and adding a plant. Onboarding was completed smoothly, and the other tasks were completed without too much confusion, although each user did so through different routes. It’s clear that allowing multiple pathways for singular tasks created the smoothest experience in this interface.
                 </p>
@@ -126,16 +143,17 @@
                     </div>
                </article>
                <div class="figure">
+                   <img src="images/up.png" alt="mockup screen">
                    <img src="images/iphonediscovery.png" alt="iphone mockup">
                    <img src="images/iphoneplantcard.png" alt="iphone mockup">
             </div>
             <!-- prototype link -->
                <button type="button">View Prototype</button>
-            
+
                <article>
                    <h2>Conclusion</h2>
                    <p>I do feel that the visual design turned out more feminine than I’d hoped. If I would have thought more about accessibility, I likely could have avoided this problem. I also would have liked to spend more time on illustrative elements, despite my desire to keep the app minimalistic. There are so many rich features that could have been included in this product, at times it was hard to stay away from scope creep.</p>
-                   <p>However, the goal of creating a minimalistic product that still offers a variety of desired features was accomplished successfully. The project leaves plenty of room for feature expansion, as well as remains a fairly simple application to build for developers. 
+                   <p>However, the goal of creating a minimalistic product that still offers a variety of desired features was accomplished successfully. The project leaves plenty of room for feature expansion, as well as remains a fairly simple application to build for developers.
                 </p>
                </article>
                </main>
@@ -146,7 +164,7 @@
                     <li> <a href="mailto:madison.byteme@gmail.com">Email</a></li>
                 </ul>
             </footer>
-        
+
          <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173820853-1"></script>
 <script>
