@@ -28,6 +28,7 @@ html,body
   "proj"
   "process";
   text-align: center;
+  width: 100%;
 }
 
 
@@ -47,9 +48,10 @@ nav ul {
     align-items: center;
 }
 
-nav li {
+li {
   padding-left: 4rem;
 }
+
 
 button {
   background-color: #E35846;
@@ -64,10 +66,6 @@ button {
   font-family: inconsolata;
   margin: 2rem 2rem;
 }
-
-img { width: 100%; object-fit: cover; }
-
-
 
 img.logo{
   display: flex;
@@ -218,10 +216,6 @@ header img{
   margin: 0 auto;
   padding: 3rem 0;
   width: 70%;
-}
-
-.button {
-  margin-top: 2rem;
 }
 
 .summary {
