@@ -75,7 +75,7 @@ img {
 
 img.logo{
   display: flex;
-  width: 4.5rem;
+  width: 5rem;
   justify-content:flex-start;
 }
 
