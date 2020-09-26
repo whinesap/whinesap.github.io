@@ -35,7 +35,6 @@ nav {
     display: flex;
     justify-content: space-between;
     grid-area: nav;
-
     padding: 5% 5%;
     width: 100%;
 }
@@ -48,6 +47,9 @@ nav ul {
     align-items: center;
 }
 
+nav li {
+  padding-left: 4rem;
+}
 
 button {
   background-color: #E35846;
@@ -61,6 +63,11 @@ button {
   font-size: 16px;
   font-family: inconsolata;
   margin: 2rem 2rem;
+}
+
+img {
+  object-fit: cover;
+  max-height: 100%;
 }
 
 img.logo{
@@ -147,7 +154,7 @@ h2 {
     font-family: inconsolata;
     font-size: 2rem;
     justify-content: center;
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 
 }
 
@@ -212,6 +219,10 @@ header img{
   margin: 0 auto;
   padding: 3rem 0;
   width: 70%;
+}
+
+.button {
+  margin-top: 2rem;
 }
 
 .summary {
@@ -315,13 +326,14 @@ padding-bottom: 2rem;
 /* Footer */
 
 footer {
-    margin: 2rem auto;
+    background-color: white;
     text-align: center;
 }
 
 footer ul {
     display: flex;
-    justify-content: space-between;
+    padding: 5rem 10rem;
+    justify-content: space-around;
 
 }
 
