@@ -134,7 +134,7 @@ article img {
 
 h1 {
     color: #1c1c1c;
-    font-family: lexend zetta;
+    font-family: 'lexend zetta', sans-serif;
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.05px;
@@ -148,7 +148,7 @@ h2 {
     color: #1c1c1c;
     display: flex;
     flex-wrap: wrap;
-    font-family: inconsolata;
+    font-family: 'Inconsolata', monospace;
     font-size: 2rem;
     justify-content: center;
     padding: 1rem 1rem 1rem 1rem;
@@ -157,7 +157,7 @@ h2 {
 
 h3 {
   color: #1C1C1C;
-  font-family: inconsolata;
+  font-family: 'Inconsolata', monospace;
   font-size: 1.6rem;
   padding: 0 2rem 3rem 2rem;
 }
@@ -166,7 +166,7 @@ p {
   color: #1c1c1c;
   display: flex;
   flex-wrap: wrap;
-  font-family: inconsolata;
+  font-family: 'Inconsolata', monospace;
   font-size: 1.6rem;
   justify-content: center;
   line-height: 130%;
@@ -178,7 +178,7 @@ p {
 
 a {
   color: #1c1c1c;
-  font-family: inconsolata;
+  font-family: 'Inconsolata', monospace;
   font-size: 2rem;
   padding: 0 1.5rem;
 }
