@@ -25,20 +25,20 @@ html {
 
 
 nav {
-    align-items: center;
     display: flex;
-    grid-area: nav;
     justify-content: space-between;
-    margin: 0 auto;
+    grid-area: nav;
+    margin: 0 3rem;
     padding: 5% 5%;
-    text-align: center;
+    width: 100%;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
+    justify-content: flex-end;
+
     align-items: center;
-    padding-left: 10rem;
 }
 
 
@@ -54,11 +54,12 @@ button {
   font-size: 16px;
   font-family: inconsolata;
   margin: 2rem auto;
-  margin-bottom: 3rem;
 }
 
 img.logo{
+  display: flex;
   width: 4.5rem;
+  justify-content:flex-start;
 }
 
 
@@ -89,7 +90,6 @@ header {
 article {
   text-align: center;
   align-content: center;
-  padding: 2rem 0;
 }
 
 article img {
