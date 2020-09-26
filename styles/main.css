@@ -76,8 +76,10 @@ img.logo{
 }
 
 .projects {
+    margin-top: 3rem;
     padding: 20rem, 2rem;
     grid-area: proj;
+
 }
 
 
@@ -99,6 +101,7 @@ article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -144,7 +147,7 @@ h2 {
     font-family: inconsolata;
     font-size: 2rem;
     justify-content: center;
-    padding: 3rem 1rem 2rem 1rem;
+    padding: 3rem 1rem 1rem 1rem;
 
 }
 
@@ -164,7 +167,7 @@ p {
   justify-content: center;
   line-height: 130%;
   margin: 0 auto;
-  padding: 3rem 1rem 3rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   width: 70%;
 }
 
@@ -211,19 +214,20 @@ header img{
   width: 70%;
 }
 
-.button{
-
+.summary {
+padding-bottom: 2rem;
 }
 
 .designer-brief {
+  display: flex;
   background: white;
   border-style: solid;
   border-width: 0.5px;
   border-color: #E35846;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 0 auto;
   text-align: center;
-  margin: 0 auto;
 }
 
 .designer-brief p{
@@ -251,7 +255,7 @@ header img{
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 1rem;
-  padding: 0 auto;
+
   text-align: center;
   width: 80%;
 }
@@ -260,7 +264,7 @@ header img{
   border: none;
   padding: 0 2rem;
   margin: 2rem;
-  width: 60%;
+  width: 100%;
 }
 
 .wireframes {
@@ -323,11 +327,49 @@ footer ul {
 
     @media screen and (min-width: 707px) {
 
-       .article {
-           background-color: red;
-           marigin: 0 20rem;
+      .projects {
+        margin-top: 6rem;
+      }
+
+       article {
            padding: 20rem, 2rem;
+           margin-top: 5rem;
+           max-width: 75rem;
        }
+
+       header {
+         padding: 0 10rem;
+       }
+
+       h1 {
+           font-size: 3rem;
+           padding: 2.4rem 5.4rem;
+       }
+
+       h2 {
+           font-size: 3rem;
+           padding-top: 6rem;
+       }
+
+       h3 {
+         font-size: 2.4rem;
+       }
+
+       p {
+         font-size: 2.4rem;
+       }
+
+       button {
+         font-size: 2.4rem;
+       }
+
+
+       a {
+
+         font-size: 2.4rem;
+
+       }
+
     }
 
 
