@@ -65,10 +65,9 @@ button {
   margin: 2rem 2rem;
 }
 
-img {
-  object-fit: cover;
-  max-height: 100%;
-}
+img { width: 100%; object-fit: cover; }
+
+
 
 img.logo{
   display: flex;
