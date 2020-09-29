@@ -68,9 +68,8 @@ button {
 }
 
 img {
-  width: auto ;
-  max-width: 100% ;
-  height: auto ;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 img.logo{
@@ -157,6 +156,7 @@ h2 {
     font-family: 'Inconsolata', monospace;
     font-size: 2rem;
     justify-content: center;
+    line-height: 150%;
     padding: 1rem 1rem 1rem 1rem;
 
 }
@@ -173,6 +173,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Inconsolata', monospace;
+  f
   font-size: 1.6rem;
   justify-content: center;
   line-height: 130%;
@@ -321,6 +322,19 @@ padding-bottom: 2rem;
   margin: 0 auto;
   width: 60%;
 }
+
+
+/* Contact Page */
+
+.contact {
+  padding: 7rem 1.5rem;
+}
+
+.currently {
+  padding: 1.5rem;
+
+}
+
 
 /* Footer */
 
