@@ -33,6 +33,11 @@ html,body
   position: relative;
   text-align: center;
   width: 100%;
+  .container{
+   max-width: 65%;
+   margin: 0 auto;
+}
+
 
 }
 
@@ -42,6 +47,7 @@ nav {
     justify-content: space-between;
     grid-area: nav;
     padding: 5% 5%;
+
     width: 100%;
 }
 
@@ -161,7 +167,7 @@ h2 {
     font-size: 3.2rem;
     justify-content: center;
     line-height: 150%;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 3rem 1rem 1rem 1rem;
 
 }
 
@@ -179,9 +185,9 @@ p {
   font-family: 'Inconsolata', monospace;
   font-size: 2.4rem;
   justify-content: center;
-  line-height: 150%;
+  line-height: 155%;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 4rem 1rem;
   width: 75%;
 }
 
@@ -214,12 +220,23 @@ a:hover {
 
 /* Case Study Specific */
 
+.buttonlink {
+  padding: 7rem 0 0 2rem;
+}
 
+.buttonlink a {
+  font-size: 5rem;
+  color: #E35846;
+}
+
+.buttonlink a:hover {
+  color: #1C1C1C;
+}
 
 .process{
   grid-area: process;
   margin: 0 auto;
-  padding: 2rem 0;
+
 }
 
 header img{
@@ -229,7 +246,8 @@ header img{
 }
 
 .summary {
-padding-bottom: 2rem;
+padding-bottom: 3rem;
+text-align: left;
 }
 
 .designer-brief {
@@ -256,9 +274,14 @@ padding-bottom: 2rem;
   border-color: #E35846;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 4rem;
   padding: 3rem;
+  text-align: left;
 }
 
+.process p {
+  text-align: left;
+}
 
 .figure {
   background: white;
@@ -324,6 +347,10 @@ padding-bottom: 2rem;
   padding: 1rem 4rem ;
   margin: 0 auto;
   width: 60%;
+}
+
+video {
+  border: 0.5px solid #1C1C1C;
 }
 
 
