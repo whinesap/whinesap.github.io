@@ -36,7 +36,7 @@
               <button id="potted-prototype">View Prototype</button>
               <script type="text/javascript">
   document.getElementById("potted-prototype").onclick = function () {
-      location.href = "https://www.figma.com/proto/8bdDkrnbW5bKvsbh25zX88/Potted-Mobile?scaling=scale-down&node-id=30%3A0";
+      handle = window.open("https://www.figma.com/proto/8bdDkrnbW5bKvsbh25zX88/Potted-Mobile?scaling=scale-down&node-id=30%3A0", "_blank");
               };
               </script>
           </div>
@@ -148,12 +148,21 @@
                    <img src="images/Group46.png" alt="color palette two">
                     </div>
                </div>
+
                <div class="mockups">
                    <img src="images/iphonediscovery.png" alt="iphone mockup">
                    <img src="images/iphoneplantcard.png" alt="iphone mockup">
             </div>
+
             <!-- prototype link -->
-               <button type="button">View Prototype</button>
+            <div class="button">
+                <button id="potted-prototype">View Prototype</button>
+                <script type="text/javascript">
+    document.getElementById("potted-prototype").onclick = function () {
+        handle = window.open("https://www.figma.com/proto/8bdDkrnbW5bKvsbh25zX88/Potted-Mobile?scaling=scale-down&node-id=30%3A0", "_blank");
+                };
+                </script>
+            </div>
 
                <div class="process">
                    <h2>Conclusion</h2>
