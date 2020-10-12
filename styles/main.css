@@ -139,6 +139,7 @@ img.logo{
 }
 
 
+
 .hero {
     padding: 20rem, 2rem;
     grid-area: hero;
@@ -306,6 +307,14 @@ color: #E35846;
   max-width: 80%;
 }
 
+.imgcontainer {
+  text-align: center;
+  margin: 0 auto;
+  max-width:100%;
+  padding: 0 3rem;
+}
+
+
 header img{
   margin: 0 auto;
   padding: 3rem 0;
@@ -366,13 +375,6 @@ max-width: 80%;
   padding: 2rem 0;
   text-align: center;
   width: 80%;
-}
-
-.figure img{
-  border: none;
-  padding: 0 2rem;
-  margin: 2rem;
-  width: 100%;
 }
 
 .wireframes {
