@@ -69,14 +69,13 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
     justify-content: flex-end;
     align-items: center;
-    width: 70%;
+    width: 50%;
 }
 
 li {
-  padding-left: 4rem;
+  margin: 0 auto;
 }
 
 
@@ -207,34 +206,18 @@ article img {
   width: 80%;
 }
 
-.aboutme {
-  margin: 5rem auto;
-  background-color: white;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: #E35846;
-  padding: 5rem 5rem;
-  text-align: center;
-  width: 65%;
-}
-
-.aboutme img {
-  margin-bottom: 3rem;
-  width: 75%;
-}
 
 /* Typography */
 
 h1 {
     color: #1c1c1c;
     font-family: 'lexend zetta', sans-serif;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-weight: bold;
     letter-spacing: 0.05px;
     line-height: 150%;
     padding: 2rem 5rem;
     text-align: center;
-    max-width: 50%;
     margin: 0 auto
 
 }
@@ -263,12 +246,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Inconsolata', monospace;
-  font-size: 2.4rem;
+  font-size: 2rem;
   justify-content: center;
   line-height: 155%;
   margin: 0 auto;
-  padding: 2rem 1rem 4rem 1rem;
-  width: 75%;
+  padding: 2rem 1rem 2rem 1rem;
+  width: 80%;
 }
 
 
@@ -291,6 +274,10 @@ a:hover {
   color: #E35846;
 }
 
+a:active {
+color: #E35846;
+}
+
 
 /* End Typography */
 
@@ -301,7 +288,7 @@ a:hover {
 /* Case Study Specific */
 
 .buttonlink {
-  padding: 7rem 0 0 2rem;
+  padding: 2rem 0 0 2rem;
 }
 
 .buttonlink a {
@@ -345,9 +332,9 @@ max-width: 80%;
 }
 
 .designer-brief p{
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-align: center;
-  padding-top: 3rem;
+  padding: 3rem;
 }
 
 .probsol{
@@ -358,9 +345,9 @@ max-width: 80%;
   flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 4rem;
-  padding: 3rem;
+  padding: 3rem 0;
   text-align: left;
-  max-width: 80%;
+  width: 80%;
 }
 
 .process p {
@@ -437,6 +424,27 @@ video {
   border: 0.5px solid #1C1C1C;
 }
 
+/* About Page */
+
+.aboutme {
+  margin: 5rem auto;
+  background-color: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #E35846;
+  padding: 5rem 0;
+  text-align: center;
+  width: 80%;
+}
+
+
+
+
+.aboutme img {
+  margin-bottom: 3rem;
+  width: 75%;
+}
+
 
 /* Contact Page */
 
@@ -469,7 +477,7 @@ video {
 
 footer {
   background-color: white;
-  position: re;
+  position: static;
  bottom: 0;
  width: 100%;
  z-index: 1000;
@@ -479,10 +487,14 @@ footer ul {
     display: flex;
     padding: 5rem 10rem;
     justify-content: space-around;
+}
 
+footer li {
+  margin: 0 auto;
 }
 
     @media screen and (min-width: 707px) {
+
 
       .projects {
         margin-top: 6rem;
@@ -501,6 +513,7 @@ footer ul {
        h1 {
            font-size: 3rem;
            padding: 2.4rem 5.4rem;
+           max-width: 60%;
        }
 
        h2 {
@@ -514,6 +527,7 @@ footer ul {
 
        p {
          font-size: 2.4rem;
+         width: 75%;
        }
 
        button {
