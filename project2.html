@@ -23,11 +23,14 @@
         <li> <a href="about.html">ABOUT</a></li>
     </ul></nav>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> 	↑  </button>
 
         <!-- hero section  -->
         <h1>Ferino Distillery</h1>
         <header>
+          <div class="headimg">
             <img src="Ferino/homepage.png" alt="mockup screen">
+          </div>
         </header>
         <main>
 
@@ -143,6 +146,27 @@ I began with changing certain aspects of the home page, including the addition o
                      <li> <a href="mailto:madison.byteme@gmail.com">Email</a></li>
                  </ul>
              </footer>
+
+             <script> //Get the button:
+              mybutton = document.getElementById("myBtn");
+
+              // When the user scrolls down 20px from the top of the document, show the button
+              window.onscroll = function() {scrollFunction()};
+
+              function scrollFunction() {
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 20) {
+                  mybutton.style.display = "block";
+                } else {
+                  mybutton.style.display = "none";
+                }
+              }
+
+              // When the user clicks on the button, scroll to the top of the document
+              function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+              }
+             </script>
 
          <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173820853-1"></script>
