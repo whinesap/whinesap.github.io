@@ -11,7 +11,7 @@ html,body
 {
     background-color: #FFF9F9;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: 0px;
     padding: 0px;
     position: relative;
@@ -23,7 +23,6 @@ html,body
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(100px, auto);
-  grid-gap: 1rem;
   grid-template-areas:
   "nav"
   "hero"
@@ -34,6 +33,7 @@ html,body
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  overflow: scroll;
 }
 
 
@@ -61,10 +61,20 @@ html,body
 
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    grid-area: nav;
-    padding: 5% 5%;
+  align-items: center;
+  background: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  grid-area: nav;
+  padding: 2% 5%;
+  border-bottom: solid;
+  border-width: 0.5px;
+  border-color: #E35846;
+
 }
 
 nav ul {
@@ -78,6 +88,11 @@ li {
   margin: 0 auto;
 }
 
+img.logo{
+  display: flex;
+  width: 12%;
+  justify-content:flex-start;
+}
 
 button {
   background-color: #E35846;
@@ -132,12 +147,6 @@ img {
   max-width: 100%;
 }
 
-img.logo{
-  display: flex;
-  width: 5rem;
-  justify-content:flex-start;
-}
-
 
 
 .hero {
@@ -145,25 +154,13 @@ img.logo{
     grid-area: hero;
 }
 
-.projects {
-    margin-top: 3rem;
-    padding: 20rem, 2rem;
-    grid-area: proj;
-
-}
-
-
 .homeheader {
     display: flex;
     justify-content: center;
-    background: white;
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: #E35846;
+    padding: 15rem 0 10rem 0;
     text-align: center;
     width: 100%;
 }
-
 
 header {
     background-color: white;
@@ -179,21 +176,35 @@ header {
   margin: 5rem ;
 }
 
+.subheading {
+  background: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #E35846;
+  margin-bottom: 10rem;
+  padding: 1rem;
+}
+
+
+.projects {
+    margin: 3rem;
+    padding: 20rem, 2rem;
+    grid-area: proj;
+
+}
+
 article {
   text-align: center;
   align-content: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
+  margin: 7rem auto;
   width: 100%;
 }
 
 article img {
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: #1c1c1c;
-  width: 80%;
+  width: 100%;
 }
 
 .proj {
@@ -201,12 +212,15 @@ article img {
   border-style: solid;
   border-width: 0.5px;
   border-color: #E35846;
-  margin: 2rem;
-  padding: 5rem 3rem;
+  margin: 1rem;
+  padding: 2rem;
   text-align: center;
   width: 80%;
 }
 
+.proj h2 {
+  font-size: 2.6rem;
+}
 
 /* Typography */
 
@@ -224,6 +238,7 @@ h1 {
 }
 
 h2 {
+    align-self: center;
     color: #1c1c1c;
     display: flex;
     flex-wrap: wrap;
@@ -231,7 +246,10 @@ h2 {
     font-size: 2.6rem;
     justify-content: center;
     line-height: 150%;
-    padding: 3rem 1rem 1rem 1rem;
+    margin: 0 auto;
+    max-width: 70%;
+    padding: 1rem;
+
 
 }
 
@@ -242,6 +260,13 @@ h3 {
   padding: 0 2rem 3rem 2rem;
 }
 
+h4 {
+color: #1C1C1C;
+font-family: 'Inconsolata', monospace;
+font-size: 1.6rem;
+opacity: 80%
+}
+
 p {
   color: #1c1c1c;
   display: flex;
@@ -250,8 +275,7 @@ p {
   font-size: 2rem;
   justify-content: center;
   line-height: 155%;
-  margin: 0 auto;
-  padding: 2rem 1rem 2rem 1rem;
+  margin: 2rem auto;
   width: 80%;
 }
 
@@ -289,11 +313,11 @@ color: #E35846;
 /* Case Study Specific */
 
 .buttonlink {
-  padding: 2rem 0 0 2rem;
+  padding: 3rem 0;
 }
 
 .buttonlink a {
-  font-size: 5rem;
+  font-size: 3rem;
   color: #E35846;
 }
 
@@ -314,6 +338,13 @@ color: #E35846;
   padding: 0 3rem;
 }
 
+.heading {
+  padding: 3rem 0;
+}
+
+.heading h2 {
+  font-size: 3.2rem;
+}
 
 header img{
   margin: 0 auto;
@@ -322,7 +353,7 @@ header img{
 }
 
 .summary {
-padding-bottom: 3rem;
+padding: 3rem;
 text-align: left;
 margin: 0 auto;
 max-width: 80%;
@@ -370,11 +401,14 @@ max-width: 80%;
   border-color: #E35846;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin: 3rem auto;
   padding: 2rem 0;
-  text-align: center;
   width: 80%;
+}
+
+.figure p {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .wireframes {
@@ -424,27 +458,30 @@ max-width: 80%;
 
 video {
   border: 0.5px solid #1C1C1C;
+  margin: 0 auto;
 }
 
 /* About Page */
 
-.aboutme {
-  margin: 5rem auto;
-  background-color: white;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: #E35846;
-  padding: 5rem 0;
-  text-align: center;
-  width: 80%;
+.aboutme img {
+  width: 100%;
 }
 
+.bio {
+  margin: 0 auto;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  padding: 2rem 0;
+  text-align: center;
+  position: absolute;
+  top: 35rem;
+  right: 2rem;
+  width: 90%;
+}
 
-
-
-.aboutme img {
-  margin-bottom: 3rem;
-  width: 75%;
+.bio p {
+  font-size: 1.8rem;
+  margin: 0 auto;
+  width: 90%;
 }
 
 
@@ -478,25 +515,25 @@ video {
 /* Footer */
 
 footer {
-  background-color: white;
-  position: static;
- bottom: 0;
- width: 100%;
- z-index: 1000;
+
+background-color: white;
+position: static;
+bottom: 0;
+padding: 2rem;
+text-align: center;
+width: 100%;
+z-index: 1000;
 }
 
-footer ul {
-    display: flex;
-    padding: 5rem 10rem;
-    justify-content: space-around;
-}
-
-footer li {
-  margin: 0 auto;
+footer a {
+  color: #E35846;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.6rem;
+  opacity: 80%;
+  padding: 0;
 }
 
     @media screen and (min-width: 707px) {
-
 
       .projects {
         margin-top: 6rem;
@@ -512,6 +549,10 @@ footer li {
          padding: 0 10rem;
        }
 
+       .heading h2{
+         font-size: 5rem;
+       }
+
        h1 {
            font-size: 3rem;
            padding: 2.4rem 5.4rem;
@@ -519,7 +560,7 @@ footer li {
        }
 
        h2 {
-           font-size: 3.2rem;
+           font-size: 3.6rem;
 
        }
 
@@ -537,10 +578,36 @@ footer li {
        }
 
 
+       .buttonlink a {
+         font-size: 5rem;
+         color: #E35846;
+       }
+
+
        a {
 
          font-size: 2.4rem;
 
+       }
+
+       /* About Me */
+
+       .bio {
+         margin: 0 auto;
+         background-color: hsla(0, 0%, 100%, 0.75);
+         padding: 2rem 0;
+         text-align: center;
+         opacity: 70%;
+         position: absolute;
+         top: 12rem;
+         right: 2rem;
+         width: 50%;
+       }
+
+       .bio p {
+         font-size: 2rem;
+         margin: 0 auto;
+         width: 90%;
        }
 
     }

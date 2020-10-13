@@ -9,12 +9,14 @@
         <!-- Custom Styles -->
         <link rel="stylesheet" href="styles/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Lexend+Zetta&display=swap" rel="stylesheet">
-
+        <!-- animate.css -->
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
     <body>
-      <div class="container">
-
+<div class="container">
         <!-- navigation bar -->
         <nav>
           <a href="index.html">
@@ -33,16 +35,23 @@
         <div class="hero">
 
           <div class="homeheader">
-            <h1>Madison is a Reno-based designer with a background in neuroscience.</h1>
+            <h1 class="animate__animated animate__slideInDown">Madison is a Reno-based designer with a background in neuroscience.</h1>
           </div>
 
         </div>
         <main>
         <!-- case studies -->
             <section class="projects">
+              <div class="subheading">
             <h2>SELECTED WORKS</h2>
-
+          </div>
             <article>
+              <div class="proj">
+              <div class="imgcontainer">
+                <img src="images/monstera.png" alt="project logo"/>
+              </div>
+            </div>
+
                 <div class="proj">
                 <h2>POTTED: A HUB FOR HOUSEPLANTS</h2>
                 <h3>Mobile & web application</h3>
@@ -57,6 +66,11 @@
 
             <article>
                 <div class="proj">
+                <div class="imgcontainer">
+                <img src="images/Cocktail.png" alt="project logo"/>
+              </div>
+            </div>
+                <div class="proj">
                 <h2>FERINO DISTILLERY</h2>
                 <h3>Website & e-commerce redesign</h3>
                 <button id="proj2button">View case study</button>
@@ -66,18 +80,18 @@
                 };
                 </script>
               </div>
-            </article>
 
+            </article>
             </section>
         </main>
       </div>
 
       <footer>
-          <ul>
-              <li> <a target="_blank" href="https://www.linkedin.com/in/madisonbytes">LinkedIn</a></li>
-              <li> <a target="_blank" href="https://github.com/whinesap">GitHub</a></li>
-              <li> <a href="mailto:madison.byteme@gmail.com">Email</a></li>
-          </ul>
+        <h4>Written, designed, and built by Madison Ferguson, a designer you can find on
+          <a target="_blank" href="https://www.linkedin.com/in/madisonbytes">LinkedIn</a>,
+          <a target="_blank" href="https://github.com/whinesap">GitHub</a>, &
+          <a href="mailto:madison.byteme@gmail.com">Email</a>.
+        </h4>
       </footer>
 
       <script> //Get the button:
@@ -100,6 +114,7 @@
          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
        }
       </script>
+
 
          <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173820853-1"></script>
