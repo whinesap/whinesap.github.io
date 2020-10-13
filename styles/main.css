@@ -450,8 +450,7 @@ max-width: 80%;
 .mockups img{
   border: none;
   padding: 1rem 4rem ;
-  margin: 0 auto;
-  width: 60%;
+  width: 100%;
 }
 
 video {
