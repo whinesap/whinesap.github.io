@@ -90,7 +90,7 @@ li {
 
 img.logo{
   display: flex;
-  width: 14%;
+  width: 15%;
   justify-content:flex-start;
 }
 
@@ -181,7 +181,7 @@ header {
   border-style: solid;
   border-width: 0.5px;
   border-color: #E35846;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
   padding: 1rem;
 }
 
@@ -199,21 +199,19 @@ article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 7rem auto;
+  margin: 10rem auto;
   width: 100%;
 }
 
 article img {
   width: 100%;
-}
-
-.proj {
-  background-color: white;
   border-style: solid;
   border-width: 0.5px;
   border-color: #E35846;
-  margin: 1rem;
-  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.proj {
   text-align: center;
   width: 80%;
 }
@@ -245,9 +243,9 @@ h2 {
     font-family: 'Inconsolata', monospace;
     font-size: 2.6rem;
     justify-content: center;
-    line-height: 150%;
+    line-height: 130%;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 100%;
     padding: 1rem;
 
 
@@ -256,8 +254,8 @@ h2 {
 h3 {
   color: #1C1C1C;
   font-family: 'Inconsolata', monospace;
-  font-size: 2rem;
-  padding: 0 2rem 3rem 2rem;
+  font-size: 1.8rem;
+  padding: 1rem;
 }
 
 h4 {
@@ -549,9 +547,9 @@ footer a {
        }
 
        h1 {
-           font-size: 3rem;
+           font-size: 3.6rem;
            padding: 2.4rem 5.4rem;
-           max-width: 60%;
+           max-width: 80%;
        }
 
        h2 {
@@ -594,8 +592,8 @@ footer a {
          text-align: center;
          opacity: 70%;
          position: absolute;
-         top: 13rem;
-         right: 4rem;
+         top: 15%;
+         right: 4%;
          width: 50%;
        }
 
