@@ -15,7 +15,6 @@ html,body
     margin: 0px;
     padding: 0px;
     position: relative;
-    overflow-x: hidden;
 }
 
 .container {
@@ -31,9 +30,9 @@ html,body
   padding-bottom: 5rem;
   position: relative;
   text-align: center;
+  min-height: 100%;
   width: 100%;
   margin: 0 auto;
-  overflow: scroll;
 }
 
 
@@ -345,8 +344,6 @@ color: #E35846;
 }
 
 header img{
-  margin: 0 auto;
-  padding: 3rem 0;
   width: 80%;
 }
 
@@ -514,7 +511,6 @@ bottom: 0;
 padding: 4rem 2rem;
 text-align: center;
 width: 100%;
-z-index: 98;
 }
 
 footer a {
