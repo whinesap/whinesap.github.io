@@ -30,9 +30,9 @@ html,body
   padding-bottom: 5rem;
   position: relative;
   text-align: center;
-  min-height: 100%;
   width: 100%;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 
@@ -269,7 +269,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Inconsolata', monospace;
-  font-size: 2rem;
+  font-size: 1.8rem;
   justify-content: center;
   line-height: 155%;
   margin: 2rem auto;
@@ -295,11 +295,6 @@ a:visited {
 a:hover {
   color: #E35846;
 }
-
-a:active {
-color: #E35846;
-}
-
 
 /* End Typography */
 
@@ -387,35 +382,31 @@ max-width: 80%;
 
 .process p {
   text-align: left;
+  margin: 2rem auto;
 }
 
 .figure {
   background: white;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: #E35846;
   display: flex;
   flex-wrap: wrap;
-  margin: 3rem auto;
-  padding: 2rem 0;
+  margin: 5rem auto;
+  padding: 4rem 0;
   width: 80%;
 }
 
 .figure p {
   text-align: center;
   margin: 0 auto;
+  font-size: 1.8rem;
+  margin: 2rem auto;
 }
 
 .wireframes {
   background: white;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: #E35846;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 3rem auto;
-  margin-bottom: 1rem;
+  margin: 5rem auto;
   padding: 0 auto;
   text-align: center;
   width: 80%;
@@ -432,13 +423,10 @@ max-width: 80%;
 
 .mockups {
   background: white;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: #E35846;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 5rem auto 3rem auto;
+  margin: 5rem auto;
   padding: 2rem;
   text-align: center;
   width: 65%;
@@ -446,8 +434,8 @@ max-width: 80%;
 
 .mockups img{
   border: none;
-  padding: 1rem 4rem ;
-  width: 100%;
+  padding: 1rem ;
+  width: 70%;
 }
 
 video {
@@ -465,15 +453,15 @@ video {
   margin: 0 auto;
   background-color: hsla(0, 0%, 100%, 0.85);
   padding: 2rem 0;
+  margin-top: -10%;
+  margin-bottom: 8rem;
+
   text-align: center;
-  position: absolute;
-  top: 0;
-  right: 2rem;
   max-width: 90%;
 }
 
 .bio p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 0 auto;
   width: 90%;
 }
@@ -487,18 +475,31 @@ video {
   border-width: 0.5px;
   border-color: #E35846;
   margin: 12rem 0 7rem 0;
+  padding: 2rem 0 6rem 0;
   text-align: center;
   width: 100%;
-}
-
-.contactinfo {
-  padding: 7rem 1.5rem;
 }
 
 .currently {
   padding: 1.5rem;
 
 }
+
+.contactinfo {
+  padding: 7rem 1.5rem 0 1.5rem;
+}
+
+.contactinfo a {
+  color: #E35846;
+}
+
+.contactinfo a:hover {
+  color: #E35846;
+  opacity: 70%;
+}
+
+
+
 
 
 /* Footer */
@@ -521,7 +522,7 @@ footer a {
   padding: 0;
 }
 
-    @media screen and (min-width: 707px) {
+    @media screen and (min-width: 895px) {
 
       .projects {
         margin-top: 6rem;
@@ -578,6 +579,45 @@ footer a {
 
        }
 
+
+       /* Navigation Bar */
+
+       nav {
+         align-items: center;
+         background: white;
+         position: sticky;
+         top: 0;
+         width: 100%;
+         z-index: 99;
+         display: flex;
+         justify-content: space-between;
+         grid-area: nav;
+         padding: 2% 5%;
+         border-bottom: solid;
+         border-width: 0.5px;
+         border-color: #E35846;
+       }
+
+
+         /* Case Study */
+
+         .mockups {
+           background: white;
+           display: inline-flex;
+           justify-content: center;
+           margin: 5rem auto;
+           padding: 2rem;
+           text-align: center;
+           width: 65%;
+         }
+
+         .mockups img{
+           border: none;
+           padding: 1rem ;
+           width: 55%;
+         }
+
+
        /* About Me */
 
        .bio {
@@ -587,7 +627,7 @@ footer a {
          text-align: center;
          opacity: 70%;
          position: absolute;
-         top: 15%;
+         top: 14%;
          right: 4%;
          width: 50%;
        }
@@ -599,6 +639,3 @@ footer a {
        }
 
     }
-
-
-}
