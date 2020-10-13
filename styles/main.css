@@ -469,11 +469,11 @@ video {
   position: absolute;
   top: 35rem;
   right: 2rem;
-  width: 90%;
+  max-width: 90%;
 }
 
 .bio p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0 auto;
   width: 90%;
 }
