@@ -8,80 +8,95 @@
         <link rel="stylesheet" type="text/css" href="styles/reset.css">
         <!-- Custom Styles -->
         <link rel="stylesheet" href="styles/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Lexend+Zetta&display=swap" rel="stylesheet">
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+</style>
         <!-- animate.css -->
         <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     </head>
 
     <body>
 <div class="container">
         <!-- navigation bar -->
         <nav>
-          <a href="index.html">
-             <img src="images/madlogo.png" alt="personal logo" class="logo">
-             </a>
+        <div id="topNav" class="navigation">
 
-    <ul>
-        <li> <a href="index.html">WORK</a></li>
-        <li> <a href="contact.html">CONTACT</a></li>
-        <li> <a href="about.html">ABOUT</a></li>
-    </ul></nav>
+          <div class="logo">
+            <a href="index.html">
+            <img src="images/madlogo.png" alt="personal logo">
+            </a>
+          </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"> 	↑  </button>
+<div class="helpme">
+<span id="closebtn" onclick="navToggle()">
+<span class="line1"></span>
+<span class="line2"></span>
+<span class="line3"></span>
+</span>
+</div>
+
+<ul class="menulist">
+<li><a class="menuitems" href="project3.html">Pupspot</a></li>
+<li><a class="menuitems" href="project.html">Potted</a></li>
+<li><a class="menuitems" href="about.html">About</a></li>
+<li><a class="menuitems" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+<div id="main">
+</div>
+
+
+<script src="main.js"></script>
 
         <!-- hero -->
         <div class="hero">
 
-          <div class="homeheader">
-            <h1 class="animate__animated animate__slideInDown">Madison is a Reno-based designer with a background in neuroscience.</h1>
+          <div class="homeheader" id="hero">
+            <h1 class="animate__animated animate__slideInDown">Hi, I'm Madison, a product designer and occasional developer with a background in neuroscience. I like creating experiences that make life feel seamless. </h1>
+
+
+
           </div>
 
         </div>
         <main>
         <!-- case studies -->
             <section class="projects">
-              <div class="subheading">
-            <h2>SELECTED WORKS</h2>
-          </div>
-            <article>
-              <div class="proj">
+            <div class="work">
+              <img src="images/workarrow.png" alt="work arrow"/>
+            </div>
+
+          <article>
+            <div class="articletitle">
+              <h2>Pupspot: Dog Park Finder</h2>
+                <h3>01</h3>
+            </div>
+              <a href="project3.html">
               <div class="imgcontainer">
-                <img src="images/monstera.png" alt="project logo"/>
-              </div>
-            </div>
+              <img src="Pupspot/pupspot-phones-thumb.png" alt="project1"/>
+          </div>
+        </a>
+          </article>
 
-                <div class="proj">
-                <h2>POTTED: A HUB FOR HOUSEPLANTS</h2>
-                <h3>Mobile & web application</h3>
-                <button id="proj1button">View case study</button>
-                <script>
-    document.getElementById("proj1button").onclick = function () {
-        location.href = "project.html";
-                };
-                </script>
-              </div>
-            </article>
 
             <article>
-                <div class="proj">
-                <div class="imgcontainer">
-                <img src="images/Cocktail.png" alt="project logo"/>
+              <div class="articletitle">
+                <h2>Potted: Plant Care App</h2>
+                <h3>02</h3>
               </div>
-            </div>
-                <div class="proj">
-                <h2>FERINO DISTILLERY</h2>
-                <h3>Website & e-commerce redesign</h3>
-                <button id="proj2button">View case study</button>
-                <script>
-    document.getElementById("proj2button").onclick = function () {
-        location.href = "project2.html";
-                };
-                </script>
+              <a href="project.html">
+              <div class="imgcontainer">
+                <img src="images/potted-macbook-thumb.png" alt="project logo"/>
               </div>
+            </a>
 
             </article>
+
+
             </section>
         </main>
       </div>

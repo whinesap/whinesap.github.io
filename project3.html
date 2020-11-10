@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Portfolio | Madison Bytes</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">
+        <!-- Custom Styles -->
+
+        <link rel="stylesheet" href="styles/pupspot.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Lexend+Zetta&display=swap" rel="stylesheet">
+
+        <link href="dist/hamburgers.css" rel="stylesheet">
+
+        <!-- animate.css -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
+
+    </head>
+    <body>
+      <div class="container">
+
+              <nav>
+              <div id="topNav" class="navigation">
+
+                <div class="logo">
+                  <a href="index.html">
+                  <img src="images/madlogo.png" alt="personal logo">
+                  </a>
+                </div>
+
+  <div class="helpme">
+  <span id="closebtn" onclick="navToggle()">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+  </span>
+  </div>
+
+<ul class="menulist">
+  <li><a class="menuitems" href="project3.html">Pupspot</a></li>
+  <li><a class="menuitems" href="project.html">Potted</a></li>
+  <li><a class="menuitems" href="about.html">About</a></li>
+  <li><a class="menuitems" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+<div id="main">
+</div>
+
+
+  <script src="main.js"></script>
+
+
+  <!-- hero section  -->
+  <header id="header">
+      <div class="headimg">
+        <div class="imgcontainer animate__animated animate__fadeIn">
+      <img src="Pupspot/pupspotscreens.png" alt="mockup screen">
+    </div>
+
+      <!-- prototype link -->
+      <div class="button">
+          <button id="pupspot-prototype">View Prototype</button>
+          <script type="text/javascript">
+document.getElementById("pupspot-prototype").onclick = function () {
+  handle = window.open("https://www.figma.com/proto/cjFk8dNmPrpXs1yG9uumkJ/Dog-Park-App-Mockups?node-id=240%3A2951&viewport=430%2C583%2C0.11842262744903564&scaling=scale-down", "_blank");
+          };
+          </script>
+      </div>
+      </div>
+
+  </header>
+
+        <main>
+
+
+
+        <!-- project brief -->
+           <div class="summary">
+               <h2>SUMMARY:</h2>
+               <p>Pupspot is a mobile application that allows users to locate dog parks based on GPS and search capabilities. Users are able to see details about listed parks, as well as view and post reviews and photos.
+</p>
+           </div>
+           <section class="designer-brief">
+               <p>Role: UX Design <br>
+                User Research <br>
+                UI Design </p>
+                <p> Tools: Figma <br>
+                    Survey Sparrow <br>
+                    Maze <br>
+                </p>
+                <p> Team: Solo</p>
+           </section>
+
+
+           <div class="probsol">
+             <div>
+               <h2>PROBLEM:</h2>
+               <p> Exercise and social stimulation are an essential part of a healthy life, not only for humans, but for our canine companions. Finding a safe, fun, and appropriate space for activity can be difficult for owners depending on their dog’s unique personality and various living situations.
+</p>
+             </div>
+             <div>
+               <h2>SOLUTION:</h2>
+               <p> A dedicated mobile product can equip dog owners with knowledge of dog-friendly spaces in any town or city, and allow them to make confident and informed decisions about where to bring their furry friend for needed activity.
+</p>
+             </div>
+           </div>
+
+
+
+           <!-- project process -->
+           <div class="process">
+               <h3>User Survey</h3>
+               <p>I deployed a web-based survey on various social media platforms such as Instagram and Slack, in order to gauge various opinions and pain points for pet owners who rate themselves as people who consider their dog’s wellness a high priority.
+               </p>
+               <div class="figure">
+                   <div class="imgcontainer">
+                     <img src="Pupspot/surveycharts.png" alt="survey charts">
+                   </div>
+               </div>
+
+               <p>Of the options given, proximity, grass or terrain, and an enclosing fence were the most important factors for users when deciding on a dog park.</p>
+           </div>
+           <div class="process">
+             <h3>Personas</h3>
+               <p>Using the data gathered from the survey, I compiled some user personas in order to better ideate a design that will be useful and desirable to the project’s target audience.
+</p>
+                <div class="figure">
+                  <div class="imgcontainer">
+                    <img src="Pupspot/persona-felicia.png" alt="user persona">
+                  </div>
+                </div>
+              </div>
+
+              <div class="process">
+                <h3>Journey Mapping</h3>
+                <p>I then drafted user journey maps for the personas I had created. I imagined the thoughts and emotions the personas would be feeling throughout the process of going to the dog park prior to the use of Pupspot, and highlighted some reported pain points and how they might fit into the journey.
+                <div class="figure">
+                  <div class="imgcontainer">
+                    <img src="Pupspot/felicia.png" alt="user journey map">
+                  </div>
+                </div>
+              </div>
+               <div class="process">
+                  <h3>Competitive Analysis</h3>
+                   <p>Next came an analysis on some of the more prominent apps on the market with similar positioning and features. I needed to evaluate what potential competitors were doing right and wrong, why they had done it that way, and how they executed their design decisions. A SWOT exploration served as a key way to quickly break down the competition.
+                   </p>
+                   <div class="figure">
+                     <div class="imgcontainer">
+                       <img src="Pupspot/appicons.png" alt="app icons">
+                     </div>
+                   </div>
+                 </div>
+
+                 <div class="process">
+                   <p>Dog Park Finder<br>
+                     + information rich<br>
+                     + poor brand identity<br>
+                     + visual design and UI is cluttered and dated<br>
+                     <br>
+                   Bark Happy<br>
+                     + parks, restaurants, hotels<br>
+                     + pet profiles, playdates, lost dog alerts<br>
+                     + good branding and iconography<br>
+                     + too many different features<br>
+                     <br>
+                   Paw Parks<br>
+                     + parks and trails<br>
+                     + good branding and UI<br>
+                     + rely on users to add content
+                    </p>
+                  </div>
+
+                    <div class="process">
+                   <p> <br>Based on this analysis I felt confident that there was space for a map-centered dog park application with a well-designed interface and modern visual brand.
+                     </p>
+               </div>
+
+               <div class="process">
+                   <h3>User Stories</h3>
+                   <p>The data gathered from the user survey allowed me to begin building a foundation that first and foremost consisted of user stories. What did the user want to accomplish, and why?
+                   </p>
+              </div>
+
+                   <div class="figuretext">
+                       <p>+ As a user I want to know what dog parks are near me</p>
+                       <p>+ As a user I want to view a specific park</p>
+                       <p>+ As a user I want to know what amenities a park has</p>
+                       <p>+ As a user I want to see a map view of dog parks</p>
+                       <p>+ As a user I want to view parks within specific parameters</p>
+                       <p>+ As a user I want to see what others have to say about a park</p>
+                   </div>
+
+               <div class="process">
+                   <h3>User Flows</h3>
+                   <p>The next step in this base-level stage was to give context and direction to these user stories, in the form of user flows, in order to build the logic between tasks from start to finish.
+                   </p>
+                   <div class="figure">
+                     <div class="imgcontainer">
+                    <img src="Pupspot/userflows.png" alt="user flows">
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="process">
+                    <h3>Sitemapping & Wireframes</h3>
+                    <p>I distilled the user flows into a content outline and sitemap to get a feel for how many screens the product would require, how users will navigate across the product, and any gaps within the views.
+                    </p>
+                    <div class="figure">
+                      <div class="imgcontainer">
+                        <img src="Pupspot/sitemapping.png" alt="site map">
+                      </div>
+                    </div>
+
+                   <p>With this amount of architectural thinking complete, construction of screen layout could begin. Initial versions were quickly sketched out on paper, and higher fidelity wireframes were created and refined using Figma.
+              </p>
+
+                <div class="figure">
+                    <div class="imgcontainer">
+                    <img src="Pupspot/wireframes.png" alt="wireframe">
+                  </div>
+                </div>
+              </div>
+
+               <div class="process">
+                   <h3>Branding & Identity</h3>
+                   <p>Developing a brand identity from scratch for the product involved several different processes that included asking myself questions about the product and its positioning, as well as studying successful brands that I found inspiring.
+                   </p>
+
+                   <p>There was a lot that I disliked about the branding of the product’s direct competitors, so I turned to pet-related brands outside of the sphere of dog park finders.
+                   </p>
+
+
+                   <div class="figure">
+                     <div class="imgcontainer">
+                       <img src="Pupspot/brand-research.png" alt="brand research">
+                     </div>
+                   </div>
+
+                   <p>I wanted the product to promise simplification, ease, and fun throughout an ongoing activity that can be stressful, confusing, and time-consuming. I made an effort to reflect this in the brand’s logo, typography, iconography, and color palette, all of which express a clean, minimal, and bold effect.
+</p>
+                   <div class="figure">
+                     <div class="imgcontainer">
+                   <img src="Pupspot/Typography.png" alt="typography samples">
+                     </div>
+                   </div>
+                   <div class="figure">
+                     <div class="imgcontainer">
+                     <img src="Pupspot/color-palette-logo.png" alt="color palette and logo">
+                   </div>
+                 </div>
+               </div>
+
+                   <div class="process">
+                   <p>The product name is simple, and explains its own purpose, while being memorable, catchy, and undifficult to pronounce. The corresponding logo mark parallels the name in its simplicity and straightforward interpretation.
+                    </p>
+
+                    <p> The brand name also includes the tagline, “Where are you playing today?”
+  The tagline supports the brand and encourages the user to to embrace the conviction of getting out with their dog and keeping exercise a priority. There is no question of “are you playing today,” as the tagline presents the user with the assumption that playing is a given.
+                    </p>
+
+                  <div class="figure">
+                  <div class="imgcontainer">
+                    <img src="Pupspot/logo-sketches.png">
+                  </div>
+                </div>
+
+                </div>
+
+                  <div class="process">
+                   <h3>High Fidelity & Prototyping</h3>
+                   <p> The branding was applied to all wireframes, and screens were refined.</p>
+
+                   <div class="figure">
+                     <div class="imgcontainer">
+                       <img src="Pupspot/mockups.png" alt="iphone mockup">
+                     </div>
+                </div>
+              </div>
+
+                <div class="figuretext">
+                <p>Refinements included:</p>
+                   <p>+ Improvement of spacing on the individual user review page and park details page.</p>
+
+                   <p>+ Addition of initial splash screen with color iterations.</p>
+
+                   <p>+ Refactoring of the filter search information layout.</p>
+
+                   <p>+ Further refinement of the post-a-review page.</p>
+                </div>
+
+
+                <div class="process">
+                  <div class="figure">
+                       <div class="imgcontainer">
+                         <img src="Pupspot/mockups-iterations.png" alt="iphone mockup">
+                       </div>
+                  </div>
+                </div>
+
+            <div class="process">
+              <p>High-fidelity screens of the product were created in Figma, and interactive connections built out using Figma’s prototyping features. The prototype was linked with Maze’s user testing tool, which allowed me to write a click test and evaluate my design hypotheses.</p>
+
+              <p>Users were guided through multiple tasks and asked to report on the ease and logic of each task, as well as complete “I like, I wish, what if” sentences to add any additional insights they may have.
+              Most notable were comments concerning the process of leaving a review, and an ability to see selected filters on the map search screens after the dropdown has been closed.</p>
+
+              <div class="figure">
+                <div class="imgcontainer">
+                  <img src="Pupspot/testingcomments.png">
+                </div>
+              </div>
+
+
+            </div>
+
+               <div class="process">
+                   <h3>Conclusion</h3>
+                   <p>
+                     Additional development of the product could include many supplementary features, such as log-in functionality and the ability to save your favorite parks. The brand identity and positioning of the product could be utilized to gradually build a culture or trend that emphasizes the importance of dog owners’ prioritizing the exercise and stimulation that is crucial to the well-being of their pets, and allow a community of fun and stewardship to form, further strengthening the product’s use.
+
+                </p>
+              </div>
+
+              <!-- next project link -->
+                <div class="buttonlink">
+                <a href="project.html">POTTED ></a>
+              </div>
+
+               </main>
+             </div>
+               </div>
+             <footer>
+               <h4>Designed and built by Madison Ferguson, a designer you can find on
+                 <a target="_blank" href="https://www.linkedin.com/in/madisonbytes">LinkedIn</a>,
+                 <a target="_blank" href="https://github.com/whinesap">GitHub</a>, &
+                 <a href="mailto:madison.byteme@gmail.com">Email</a>.
+               </h4>
+             </footer>
+
+
+
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173820853-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173820853-1');
+</script>
+    </body>
+</html>

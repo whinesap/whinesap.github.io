@@ -6,7 +6,8 @@
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
         <link rel="stylesheet" type="text/css" href="styles/reset.css">
         <!-- Custom Styles -->
-        <link rel="stylesheet" href="styles/main.css">
+
+        <link rel="stylesheet" href="styles/potted.css">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Lexend+Zetta&display=swap" rel="stylesheet">
         <!-- animate.css -->
         <link
@@ -18,21 +19,36 @@
       <div class="container">
         <!-- navigation bar -->
         <nav>
-        <a href="index.html">
-        <img src="images/madlogo.png" alt="personal logo" class="logo">
-        </a>
-    <ul>
-        <li> <a href="index.html">WORK</a></li>
-        <li> <a href="contact.html">CONTACT</a></li>
-        <li> <a href="about.html">ABOUT</a></li>
-    </ul></nav>
+        <div id="topNav" class="navigation">
+          <div class="logo">
+            <a href="index.html">
+            <img src="images/madlogo.png" alt="personal logo">
+            </a>
+          </div>
+<div class="helpme">
+<span id="closebtn" onclick="navToggle()">
+<span class="line1"></span>
+<span class="line2"></span>
+<span class="line3"></span>
+</span>
+</div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"> 	↑  </button>
+<ul class="menulist">
+<li><a class="menuitems" href="project3.html">Pupspot</a></li>
+<li><a class="menuitems" href="project.html">Potted</a></li>
+<li><a class="menuitems" href="about.html">About</a></li>
+<li><a class="menuitems" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+<div id="main">
+</div>
+
+
+<script src="main.js"></script>
+
 
         <!-- hero section  -->
-        <div class="heading">
-        <h2>POTTED: A HUB FOR HOUSEPLANTS</h2>
-      </div>
         <header>
             <div class="headimg">
               <div class="imgcontainer animate__animated animate__fadeIn">
@@ -41,7 +57,7 @@
 
             <!-- prototype link -->
             <div class="button">
-                <button id="potted-prototype">View Prototype</button>
+                <button class="button" id="potted-prototype">View Prototype</button>
                 <script type="text/javascript">
     document.getElementById("potted-prototype").onclick = function () {
         handle = window.open("https://www.figma.com/proto/8bdDkrnbW5bKvsbh25zX88/Potted-Mobile?scaling=scale-down&node-id=30%3A0", "_blank");
@@ -86,32 +102,38 @@
 
            <!-- project process -->
            <div class="process">
-               <h2>User Research</h2>
+               <h3>User Survey</h3>
                <p>I began by sharing a survey on multiple social media platforms and forums in order to gauge interest in a plant-related application and collect information on current paid points.</p>
-               <div class="figure">
+          </div>
+               <div class="figuretext">
                    <p> Interested in plants:<br>
                     100%</p>
                     <p>Interested in plant care:<br>
                     93.3%</p>
                </div>
+          <div class="process">
                <p>Out of the 10 features given, saving a list of plants currently owned, water and fertilizer reminders, and timelines related to plant growth-periods and dormancy were the three most popular choices.</p>
            </div>
            <div class="process">
+               <h3>Personas</h3>
                <p>Using the data gathered from the survey, I compiled some user personas in order to better ideate a design that will be useful and desirable to the project's target audience.</p>
                 <div class="figure">
                   <div class="imgcontainer">
-                    <img src="images/AlexO.png" alt="user persona">
+                    <img src="images/alex.png" alt="user persona">
                   </div>
+                </div>
+                <div class="figure">
                   <div class="imgcontainer">
-                    <img src="images/DanielJ.png" alt="user persona">
+                    <img src="images/daniel.png" alt="user persona">
                   </div>
                 </div>
               </div>
                <div class="process">
+                 <h3>Competitive Analysis</h3>
                    <p>My last step in this phase of the project was to perform a competitive analysis on current prominent plant apps. I wanted to find out what features these apps had chosen to offer, as well as their strengths and weaknesses.</p>
                    <div class="figure">
                      <div class="imgcontainer">
-                       <img src="images/Group68(3).png" alt="app icons">
+                       <img src="images/appicons.png" alt="app icons">
                      </div>
 
                    </div>
@@ -120,9 +142,11 @@
                    <p>Happy Plant has the simplest user interface and design out of the three, with basic reminder settings. It does offer a unique feature however, in which users can view photos of their plants in a time-lapse video.</p>
                </div>
                <div class="process">
-                   <h2>Information Architecture</h2>
+                   <h3>Information Architecture</h3>
                    <p>At this point I felt confident enough to begin hashing out the organization and functionality of the product, which started with writing 20+ user stories based on the information gathered throughout my research. These stories were written from the point of view of the user, and organized by level of importance.</p>
-                   <div class="figure">
+               </div>
+
+                   <div class="figuretext">
                        <p>+ As a new user I want to create an account</p>
                        <p>+ As a new user I want to add my first plant</p>
                        <p>+ As a user I want to add additional plants</p>
@@ -130,34 +154,32 @@
                        <p>+ As a user I want to mark plants as "watered"</p>
                        <p>+ As a user I want to see when to water plants next</p>
                    </div>
-               </div>
+
                <div class="process">
                    <p>With these tasks in mind, I was able to construct user flows to further build out the structural basis of the product. This was a crucial step that facilitated the process of creating logical and useful sketches and wireframes.</p>
                    <div class="figure">
                      <div class="imgcontainer">
                     <img src="images/userflows2.png" alt="user flows">
                   </div>
+                </div>
+                <div class="figure">
                   <div class="imgcontainer">
                     <img src="images/userflows1.png" alt="user flows">
                   </div>
-
                 </div>
+                </div>
+
+                <div class="process">
                    <p>I was able to create a prototype with my wireframes through InVision, and then conduct an initial round of usability testing. Participants were asked to complete a series of tasks which included signing up for an account, as well as searching for and adding a plant. Onboarding was completed smoothly, and the other tasks were completed without too much confusion, although each user did so through different routes. It’s clear that allowing multiple pathways for singular tasks created the smoothest experience in this interface.
                 </p>
-                <div class="wireframes">
-                    <div class="imgcontainer">
-                    <img src="images/Upwireframe.png" alt="wireframe">
-                  </div>
+                <div class="figure">
                   <div class="imgcontainer">
-                    <img src="images/MyPlantsWireframe.png" alt="wireframe">
-                  </div>
-                  <div class="imgcontainer">
-                    <img src="images/PlantCardWireframe.png" alt="wireframe">
+                    <img src="images/wireframes.png" alt="wireframe">
                   </div>
                 </div>
               </div>
                <div class="process">
-                   <h2>Branding & Identity</h2>
+                   <h3>Branding & Identity</h3>
                    <p>I wanted to take the project in a different direction than the majority of the other plant apps I had studied. I wanted something a bit punchier and less feminine. After writing a word association list I chose “Potted” for the name, as I felt it encapsulated the concept I wanted to create, and tied in with the idea of houseplants, specifically.</p>
                    <p>Brand development continued with the building of moodboards and personality details.</p>
                    <div class="figure">
@@ -169,9 +191,11 @@
                   <div class="imgcontainer">
                    <img src="images/colorlogopotted.png" alt="logo image">
                  </div>
+                 <div class="figure">
                  <div class="imgcontainer">
                    <img src="images/logoiterationpotted.png" alt="logo iteration">
                  </div>
+               </div>
                     </div>
                    <p>The bold, rounded logo type paired with PT Mono has loads of personality, while still being harmonious. Days One as the logo type also lends itself to be part of a type-based logo, with the two “T’s” next to each other making up a pictorial pot that a simple plant can grow out of.</p>
                    <div class="figure">
@@ -193,27 +217,29 @@
                     </div>
                </div>
 
-               <div class="mockups">
+               <div class="process">
+               <div class="figure">
                  <div class="imgcontainer">
-                   <img src="images/iphonediscovery.png" alt="iphone mockup">
-                 </div>
-                 <div class="imgcontainer">
-                   <img src="images/iphoneplantcard.png" alt="iphone mockup">
+                   <img src="images/twoscreenmockups.png" alt="iphone mockup">
                  </div>
             </div>
+          </div>
 
 
                <div class="process">
-                   <h2>Conclusion</h2>
+                   <h3>Conclusion</h3>
                    <p>I do feel that the visual design turned out more feminine than I’d hoped. If I would have thought more about accessibility, I likely could have avoided this problem. I also would have liked to spend more time on illustrative elements, despite my desire to keep the app minimalistic. There are so many rich features that could have been included in this product, at times it was hard to stay away from scope creep.</p>
                    <p>However, the goal of creating a minimalistic product that still offers a variety of desired features was accomplished successfully. The project leaves plenty of room for feature expansion, as well as remains a fairly simple application to build for developers.
                 </p>
+              </div>
 
 
               <!-- next project link -->
                 <div class="buttonlink">
-                <a href="project2.html">FERINO DISTILLERY ></a>
+                <a href="project3.html">PUPSPOT ></a>
               </div>
+
+
 
                </main>
              </div>
@@ -227,26 +253,6 @@
              </footer>
 
 
-            <script> //Get the button:
-             mybutton = document.getElementById("myBtn");
-
-             // When the user scrolls down 20px from the top of the document, show the button
-             window.onscroll = function() {scrollFunction()};
-
-             function scrollFunction() {
-               if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 20) {
-                 mybutton.style.display = "block";
-               } else {
-                 mybutton.style.display = "none";
-               }
-             }
-
-             // When the user clicks on the button, scroll to the top of the document
-             function topFunction() {
-               document.body.scrollTop = 0; // For Safari
-               document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-             }
-            </script>
 
          <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173820853-1"></script>
