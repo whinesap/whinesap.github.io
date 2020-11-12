@@ -269,7 +269,9 @@ header {
   padding: 1rem 0;
 }
 
-
+.work {
+  margin-bottom: 8rem;
+}
 
 .projects {
     justify-content: center;
