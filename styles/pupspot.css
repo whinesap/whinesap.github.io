@@ -395,7 +395,7 @@ h3 {
   font-size: 3.2rem;
   padding: 1rem;
   text-align: left;
-  margin-left: 8%;
+  margin-left: 7.25%;
 }
 
 h4 {
@@ -540,7 +540,8 @@ max-width: 80%;
 .figuretext p {
   justify-content: flex-start;
   text-align: left;
-  margin: 2rem 32rem;
+  margin: 2rem auto;
+  width: 70%;
 }
 
 .figure p {
@@ -670,6 +671,24 @@ footer a {
      width: 90%;
    }
 
+   .figuretext p {
+     justify-content: flex-start;
+     text-align: left;
+     margin: 2rem 32rem;
+   }
+
+   p {
+     color: #1c1c1c;
+     display: flex;
+     flex-wrap: wrap;
+     font-family: 'Inconsolata', monospace;
+     font-size: 2.1rem;
+     justify-content: center;
+     line-height: 155%;
+     margin: 2rem auto;
+     width: 80%;
+   }
+
    h1 {
        color: #1c1c1c;
        font-family: 'lexend zetta', sans-serif;
@@ -703,7 +722,7 @@ footer a {
      color: #5B69E6;
      font-family: 'Inconsolata', monospace;
      font-size: 4.0rem;
-     margin-left: 11.5%;
+     margin-left: 9%;
      padding: 1rem;
      text-align: left;
    }
