@@ -395,7 +395,7 @@ h3 {
   font-size: 3.2rem;
   padding: 1rem;
   text-align: left;
-  margin-left: 8.75%;
+  margin-left: 8%;
 }
 
 h4 {
@@ -703,47 +703,11 @@ footer a {
      color: #5B69E6;
      font-family: 'Inconsolata', monospace;
      font-size: 4.0rem;
-     margin-left: 8.75%;
+     margin-left: 11.5%;
      padding: 1rem;
      text-align: left;
    }
 
-   h4 {
-   color: #1C1C1C;
-   font-family: 'Inconsolata', monospace;
-   font-size: 1.6rem;
-   opacity: 80%
-   }
 
-   p {
-     color: #1c1c1c;
-     display: flex;
-     flex-wrap: wrap;
-     font-family: 'Inconsolata', monospace;
-     font-size: 1.8rem;
-     justify-content: center;
-     line-height: 155%;
-     margin: 2rem auto;
-     width: 80%;
-   }
-
-   a {
-     color: #A7927B;
-     font-family: 'Inconsolata', monospace;
-     font-size: 2rem;
-     padding: 0 1.5rem;
-   }
-
-   a:link {
-     text-decoration: none;
-   }
-
-   a:visited {
-     text-decoration: none;
-   }
-
-   a:hover {
-     color: #333333;
-   }
 
 }
