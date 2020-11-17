@@ -85,14 +85,20 @@ body {
 }
 
 
+.menulist {
+    width:200px;
+}
+
+
 .logo {
     text-align:center;
     margin:0 auto;
     position: absolute;
     padding-right: 2rem;
     padding-top: 1rem;
-      width: 5%;
+      width: 6rem;
 }
+
 
 .line1, .line2, .line3 {
   margin-top:5px;
