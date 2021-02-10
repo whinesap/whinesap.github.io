@@ -367,6 +367,16 @@ p {
   width: 80%;
 }
 
+.homeheader a {
+  color: #A7927B;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3.6rem;
+  line-height: 150%;
+}
+
+.homeheader a:hover {
+  color: #1c1c1c;
+}
 
 a {
   color: #1c1c1c;
